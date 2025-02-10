@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/onbording_desk.jpg"); /* 기본 (데스크톱) 이미지 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-around;
+  gap: 200px;
+}
+
+.title {
+  /* text-align: center; */
+  font-size: 3rem;
+  color: white;
+}
+
+.button {
+  width: 220px;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: #e3d3a0;
+  color: white;
+  font-size: 1rem;
+}
+
+/* 모바일 화면 (768px 이하)에서는 다른 이미지 적용 */
+@media (max-width: 768px) {
+  .container {
+    background-image: url("/images/onbording_mobile.jpg");
+  }
+}
