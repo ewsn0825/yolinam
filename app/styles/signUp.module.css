@@ -1,15 +1,30 @@
-.container {
+.containerTop {
   width: 100vw;
-  height: 100vh;
-  background-color: #c4c4c4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 30vh;
+  opacity: 80%;
+  background-image: url("/images/sign_bg.png"); /* 기본 (데스크톱) 이미지 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(50px);
+  position: relative;
+}
+.containerBottom {
+  width: 100vw;
+  height: 20vh;
+  opacity: 80%;
+  background-image: url("/images/sign_bg.png"); /* 기본 (데스크톱) 이미지 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(50px);
 }
 .icon {
+  position: absolute;
+  top: 5%;
   /* background-image: url("/images/signIcon.png");  */
   /* background-size: cover; */
   /* background-position: center; */
   /* border-radius: 9999px; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
